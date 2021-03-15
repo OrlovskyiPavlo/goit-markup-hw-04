@@ -220,7 +220,7 @@ a:visited {
 .advantages li:last-child {
   margin-right: 0;
 }
-/*задаем ширину блока преимуществ*/
+/*задаем ширину пунктам преимуществ*/
 .advantages li {
   width: 270px;
 }
@@ -235,6 +235,16 @@ a:visited {
 .group p {
   line-height: 1.7;
   color: var(--secondary-font-color);
+}
+.svg-advantages {
+  width:270px;
+  height:120px;
+  background-color: var(--background-color);
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
 }
 /* секция Occupation */
 .occupation {
@@ -308,7 +318,20 @@ a:visited {
 .customers {
   padding-top: 94px;
 }
-
+.customers-link svg {
+  height: 45px;
+  fill: #afb1b8;
+}
+.customers-link:hover {
+  border: 1px solid var(--accent-color)
+}
+.customers-link:hover svg {
+  fill:var(--accent-color);
+}
+.customers-link:focus{
+  outline:none;
+  border:1px solid var(--accent-color);
+}
 /* Страница Portfolio */
 .portfolio {
   display: flex;
